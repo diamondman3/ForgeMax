@@ -98,11 +98,10 @@ public class DerpMod
         antibacon = new Antibacon();
         GameRegistry.registerItem(antibacon, "Antibacon");
         GameRegistry.addShapedRecipe(new ItemStack(antibacon, 8),"ppp", "ptp", "ppp", 'p', new ItemStack(Items.cooked_porkchop), 't', tGS);
-        //will use cooked porkchop texture
 
 
-        //GameRegistry.registerBlock(repeaterBomb, "Repeater Bomb");
-        //Repeater Bombs will use Troll Gems
+        GameRegistry.registerBlock(repeaterBomb, "Repeater Bomb");
+
 
 
     }

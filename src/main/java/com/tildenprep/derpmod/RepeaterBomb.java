@@ -2,11 +2,15 @@ package com.tildenprep.derpmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityWitherSkull;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
+import org.lwjgl.Sys;
 
 import java.util.Random;
 
@@ -15,11 +19,13 @@ import java.util.Random;
  */
 public class RepeaterBomb extends Block {
 
+    boolean exploded = false;
+
     public RepeaterBomb (Material material)
     {
         super(material);
-        setBlockName("Repeater Bomb");
-        setCreativeTab(CreativeTabs.tabDecorations);
+        setBlockName("repeaterBomb");
+        setCreativeTab(CreativeTabs.tabRedstone);
         setHardness(0F);
         setStepSound(Block.soundTypeStone);
     }
@@ -30,14 +36,18 @@ public class RepeaterBomb extends Block {
         return Items.repeater;
     }
 
-    public boolean onBlockActivated(World p_149727_1_, int p_149727_2_, int p_149727_3_, int p_149727_4_, EntityPlayer p_149727_5_, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_){
-        explode();
-        return true;
+    @Override
+    public void onNeighborBlockChange(World world, int x, int y, int z, Block p_149695_5_){
+        if (exploded == false) {
+            System.out.println("exploded checked");
+            if(world.isBlockIndirectlyGettingPowered(x,y,z)){
+                world.createExplosion(null, getBlockBoundsMaxX(), getBlockBoundsMaxY(), getBlockBoundsMaxZ(), 64F, false);
+                System.out.println("I like cheese");
+                exploded = true;
+            }
+        }
     }
 
-    public void explode(){
-         //bouche
-    }
 
     //    @Override
 //    public void onBlockDestroyedByPlayer(){

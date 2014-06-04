@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 public class Antibacon extends ItemFood {
 
     public Antibacon(){
-        super(-6, -3F, true);
+        super(-8, -12.8F, true);
         this.setAlwaysEdible();
         this.setCreativeTab(CreativeTabs.tabFood);
         setUnlocalizedName("antibacon");
@@ -21,7 +21,7 @@ public class Antibacon extends ItemFood {
 
     public void onFoodEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
     {
-        par2World.playSoundAtEntity(par3EntityPlayer,("derpMod:trollSongClip"), 5F, 1F);
+        par2World.playSoundAtEntity(par3EntityPlayer,("DerpMod:trollSongClip"), 1, 1);
 
     }
 }
