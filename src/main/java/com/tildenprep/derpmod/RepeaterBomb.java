@@ -19,7 +19,7 @@ import java.util.Random;
  */
 public class RepeaterBomb extends Block {
 
-    boolean exploded = false;
+    boolean exploded;
 
     public RepeaterBomb (Material material)
     {
@@ -27,6 +27,7 @@ public class RepeaterBomb extends Block {
         setBlockName("repeaterBomb");
         setCreativeTab(CreativeTabs.tabRedstone);
         setHardness(0F);
+        exploded = false;
         setStepSound(Block.soundTypeStone);
     }
 
@@ -41,7 +42,8 @@ public class RepeaterBomb extends Block {
         if (exploded == false) {
             System.out.println("exploded checked");
             if(world.isBlockIndirectlyGettingPowered(x,y,z)){
-                world.createExplosion(null, getBlockBoundsMaxX(), getBlockBoundsMaxY(), getBlockBoundsMaxZ(), 64F, false);
+                this.breakBlock(world,x,y,z,this,0);
+                world.createExplosion(null, x, y, z, 6F, false);
                 System.out.println("I like cheese");
                 exploded = true;
             }
