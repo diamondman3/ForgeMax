@@ -2,15 +2,11 @@ package com.tildenprep.derpmod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityWitherSkull;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
-import org.lwjgl.Sys;
 
 import java.util.Random;
 
@@ -39,24 +35,19 @@ public class RepeaterBomb extends Block {
 
     @Override
     public void onNeighborBlockChange(World world, int x, int y, int z, Block p_149695_5_){
-        if (exploded == false) {
-            System.out.println("exploded checked");
-            if(world.isBlockIndirectlyGettingPowered(x,y,z)){
-                this.breakBlock(world,x,y,z,this,0);
-                world.createExplosion(null, x, y, z, 6F, false);
-                System.out.println("I like cheese");
-                exploded = true;
-            }
+        if(world.isBlockIndirectlyGettingPowered(x,y,z)){
+            world.setBlock(x,y,z, Blocks.air); //destroy the repeaterbomb itself
+            world.createExplosion(null, x, y, z, 6F, true);
         }
     }
+}
 
 
-    //    @Override
+//    @Override
 //    public void onBlockDestroyedByPlayer(){
 //
 //        super.onBlockDestroyedByPlayer(World world);
 //    }
 
 
-}
 

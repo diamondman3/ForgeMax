@@ -101,6 +101,7 @@ public class DerpMod
 
 
         GameRegistry.registerBlock(repeaterBomb, "Repeater Bomb");
+        GameRegistry.addShapedRecipe(new ItemStack(repeaterBomb, 1),"tdt","ggg","srs",'t',new ItemStack(Blocks.redstone_torch),'d',(derpIngot),'g',(trollGem),'s',(Blocks.stone),'r', (Blocks.unpowered_repeater));
 
 
 
