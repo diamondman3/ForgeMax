@@ -1,0 +1,12 @@
+package com.tildenprep.derpmod;
+
+import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.world.World;
+
+public class EntityDerpGrenade extends EntityThrowable{
+	
+	public EntityDerpGrenade(World world){
+		super(world);
+	}
+
+}

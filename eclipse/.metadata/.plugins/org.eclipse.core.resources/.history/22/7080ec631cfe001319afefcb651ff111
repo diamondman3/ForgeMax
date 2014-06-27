@@ -1,0 +1,17 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CompleteRageIngot {
+
+
+    public CompleteRageIngot(){
+        super();
+        setCreativeTab(CreativeTabs.tabMaterials);
+        setMaxStackSize(64);
+        setUnlocalizedName("derpIngot");
+        setTextureName("derpmod:derpIngot");
+    }
+}
+
+}

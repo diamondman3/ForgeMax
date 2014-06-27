@@ -1,0 +1,44 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class UnfinishedRageIngot extends Item{
+   
+	public UnfinishedRageIngot(int damage){
+        super();
+        int damageVal = damage;
+        setCreativeTab(CreativeTabs.tabMaterials);
+        setMaxStackSize(64);
+        setMaxDamage(6);
+        
+        if (damageVal == 0){
+        	setTextureName("derpmod:rageIngot1");
+        	setUnlocalizedName("rageIngot1");
+        }
+        else if (damageVal == 1){
+        	setTextureName("derpmod:rageIngot2");
+        	setUnlocalizedName("rageIngot2");
+        }
+        else if (damageVal == 2){
+        	setTextureName("derpmod:rageIngot3");
+        	setUnlocalizedName("rageIngot3");
+        }
+        else if (damageVal == 3){
+        	setTextureName("derpmod:rageIngot4");
+        	setUnlocalizedName("rageIngot4");
+        }
+        else if (damageVal == 4){
+        	setTextureName("derpmod:rageIngot5");
+        	setUnlocalizedName("rageIngot5");
+        }
+        else if (damageVal == 5){
+        	setTextureName("derpmod:rageIngot6");
+        	setUnlocalizedName("rageIngot6");
+        }
+        else{
+        	setTextureName("derpmod:rageIngot7");
+        	setUnlocalizedName("rageIngot7");
+        }
+	}
+}

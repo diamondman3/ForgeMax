@@ -1,0 +1,21 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+public class UnfinishedRageIngot extends Item{
+   
+	public UnfinishedRageIngot(int damage){
+        super();
+        int damageVal = damage;
+        setCreativeTab(CreativeTabs.tabMaterials);
+        setMaxStackSize(64);
+        setMaxDamage(6);
+        this.setDamage(new ItemStack(this), damageVal);
+        setUnlocalizedName("missingnoURI");
+        setTextureName("derpMod:");
+	}
+	
+	
+}

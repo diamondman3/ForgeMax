@@ -1,0 +1,19 @@
+package com.tildenprep.derpmod.world;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.world.Explosion;
+import net.minecraft.world.World;
+
+public class NondamagingExplosion extends Explosion{
+	
+	public NondamagingExplosion(World world, Entity exploder, double x, double y, double z, float size)
+    {
+        this.worldObj = world;
+        this.exploder = exploder;
+        this.explosionSize = size;
+        this.explosionX = x;
+        this.explosionY = y;
+        this.explosionZ = z;
+    }
+
+}

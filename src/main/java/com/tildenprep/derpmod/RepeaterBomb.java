@@ -1,29 +1,33 @@
 package com.tildenprep.derpmod;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.BlockRedstoneRepeater;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
-
-import java.util.Random;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 /**
  * Created by kenny on 4/9/14.
  */
-public class RepeaterBomb extends Block {
+public class RepeaterBomb extends BlockRedstoneRepeater {
 
     boolean exploded;
 
-    public RepeaterBomb (Material material)
+    public RepeaterBomb ()
     {
-        super(material);
+    	super(false);
         setBlockName("repeaterBomb");
-        setCreativeTab(CreativeTabs.tabRedstone);
+        setCreativeTab(CreativeTabs.tabDecorations);
         setHardness(0F);
         exploded = false;
+        setBlockTextureName("derpmod:repeaterBomb");
         setStepSound(Block.soundTypeStone);
     }
 
@@ -32,14 +36,66 @@ public class RepeaterBomb extends Block {
     {
         return Items.repeater;
     }
+    
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int p_149691_1_, int p_149691_2_)
+    {
+        return p_149691_1_ == 0 ? (this.isRepeaterPowered ? Blocks.redstone_torch.getBlockTextureFromSide(p_149691_1_) : Blocks.unlit_redstone_torch.getBlockTextureFromSide(p_149691_1_)) : (p_149691_1_ == 1 ? this.blockIcon : Blocks.double_stone_slab.getBlockTextureFromSide(1));
+    }
 
     @Override
     public void onNeighborBlockChange(World world, int x, int y, int z, Block p_149695_5_){
+    	//super.onNeighborBlockChange(world, x, y, z, p_149695_5_);
+    	this.redstoneConnection(world, x, y, z, p_149695_5_);
         if(world.isBlockIndirectlyGettingPowered(x,y,z)){
-            world.setBlock(x,y,z, Blocks.air); //destroy the repeaterbomb itself
+            world.setBlock(x,y,z, Blocks.air); //destroy the repeater bomb itself
             world.createExplosion(null, x, y, z, 6F, true);
         }
     }
+    
+    protected void redstoneConnection(World p_149897_1_, int p_149897_2_, int p_149897_3_, int p_149897_4_, Block p_149897_5_)
+    {
+        int l = p_149897_1_.getBlockMetadata(p_149897_2_, p_149897_3_, p_149897_4_);
+
+        if (!this.func_149910_g(p_149897_1_, p_149897_2_, p_149897_3_, p_149897_4_, l))
+        {
+            boolean flag = this.isGettingInput(p_149897_1_, p_149897_2_, p_149897_3_, p_149897_4_, l);
+
+            if ((this.isRepeaterPowered && !flag || !this.isRepeaterPowered && flag) && !p_149897_1_.isBlockTickScheduledThisTick(p_149897_2_, p_149897_3_, p_149897_4_, this))
+            {
+                byte b0 = -1;
+
+                if (this.func_149912_i(p_149897_1_, p_149897_2_, p_149897_3_, p_149897_4_, l))
+                {
+                    b0 = -3;
+                }
+                else if (this.isRepeaterPowered)
+                {
+                    b0 = -2;
+                }
+
+                p_149897_1_.scheduleBlockUpdateWithPriority(p_149897_2_, p_149897_3_, p_149897_4_, this, this.func_149901_b(l), b0);
+            }
+        }
+    }
+
+	/*@Override
+	protected int func_149901_b(int var1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	protected BlockRedstoneDiode getBlockPowered() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected BlockRedstoneDiode getBlockUnpowered() {
+		// TODO Auto-generated method stub
+		return null;
+	}*/
 }
 
 

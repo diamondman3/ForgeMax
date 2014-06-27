@@ -1,0 +1,15 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class DerpGrenadeItem extends Item {
+	
+	 public DerpGrenadeItem(){
+	        super();
+	        this.setCreativeTab(CreativeTabs.tabCombat);
+	        setUnlocalizedName("derpGrenade");
+	        setTextureName("derpmod:derpGrenade");
+	    }
+
+}

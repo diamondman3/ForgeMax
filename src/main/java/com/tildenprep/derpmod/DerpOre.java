@@ -21,10 +21,4 @@ public class DerpOre extends Block {
         setBlockTextureName("derpmod:derpOre");
         setHarvestLevel("pickaxe", 2);
     }
-
-    public int idDropped(int par1, Random par2Random, int par3)
-    {
-        return 0;
-    }
-
 }

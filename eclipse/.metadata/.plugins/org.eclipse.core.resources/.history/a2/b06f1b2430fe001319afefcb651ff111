@@ -1,0 +1,11 @@
+package com.tildenprep.derpmod;
+
+import net.minecraft.block.Block;
+
+public class RageBlock extends Block{
+	
+	public RageBlock(Material material){
+		super(material);
+	}
+
+}

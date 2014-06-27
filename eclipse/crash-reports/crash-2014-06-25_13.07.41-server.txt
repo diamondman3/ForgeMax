@@ -1,0 +1,87 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 6/25/14 1:07 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at com.tildenprep.derpmod.world.NondamagingExplosion.doExplosionA(NondamagingExplosion.java:60)
+	at com.tildenprep.derpmod.EntityDerpGrenade.onImpact(EntityDerpGrenade.java:35)
+	at net.minecraft.entity.projectile.EntityThrowable.onUpdate(EntityThrowable.java:229)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2254)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:697)
+	at net.minecraft.world.World.updateEntity(World.java:2214)
+	at net.minecraft.world.World.updateEntities(World.java:2064)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:528)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:698)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:608)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:747)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.tildenprep.derpmod.world.NondamagingExplosion.doExplosionA(NondamagingExplosion.java:60)
+	at com.tildenprep.derpmod.EntityDerpGrenade.onImpact(EntityDerpGrenade.java:35)
+	at net.minecraft.entity.projectile.EntityThrowable.onUpdate(EntityThrowable.java:229)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:2254)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:697)
+	at net.minecraft.world.World.updateEntity(World.java:2214)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (com.tildenprep.derpmod.EntityDerpGrenade)
+	Entity ID: 14585
+	Entity Name: unknown
+	Entity's Exact location: 1311.41, 56.08, 1209.73
+	Entity's Block location: World: (1311,56,1209), Chunk: (at 15,3,9 in 81,75; contains blocks 1296,0,1200 to 1311,255,1215), Region: (2,2; contains chunks 64,64 to 95,95, blocks 1024,0,1024 to 1535,255,1535)
+	Entity's Momentum: -1.41, -0.42, 0.09
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2064)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:528)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player828'/14, l='New World', x=1317.22, y=56.00, z=1209.52]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 2246770313564136900
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 2;7,3x1,52x24;2;
+	Level spawn location: World: (1320,4,1207), Chunk: (at 8,0,7 in 82,75; contains blocks 1312,0,1200 to 1327,255,1215), Region: (2,2; contains chunks 64,64 to 95,95, blocks 1024,0,1024 to 1535,255,1535)
+	Level time: 48191 game time, 1122 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 12269 (now: false), thunder time: 97926 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:698)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:608)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:747)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 889989520 bytes (848 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 467 (26152 bytes; 0 MB) allocated, 236 (13216 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.03 FML v7.2.213.1133 Minecraft Forge 10.12.2.1133 4 mods loaded, 4 mods active
+	mcp{9.03} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.2.213.1133} [Forge Mod Loader] (forgeSrc-1.7.2-10.12.2.1133.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.12.2.1133} [Minecraft Forge] (forgeSrc-1.7.2-10.12.2.1133.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	DerpMod{0.0.3} [DerpMod] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 48 (2688 bytes; 0 MB) allocated, 45 (2520 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player828'/14, l='New World', x=1317.22, y=56.00, z=1209.52]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

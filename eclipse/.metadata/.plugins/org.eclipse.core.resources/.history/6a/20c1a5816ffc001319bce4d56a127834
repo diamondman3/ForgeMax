@@ -1,0 +1,7 @@
+package com.tildenprep.derpmod;
+
+import net.minecraft.entity.projectile.EntityThrowable;
+
+public class EntityDerpGrenade extends EntityThrowable{
+
+}

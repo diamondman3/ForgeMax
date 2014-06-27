@@ -1,0 +1,16 @@
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemSword;
+
+
+public class TrollsDagger extends ItemSword{
+	
+	public TrollsDagger (ToolMaterial material){
+		super(material);
+        setCreativeTab(CreativeTabs.tabCombat);
+        setMaxStackSize(1);
+        setTextureName("derpmod:trollsDagger");
+        setUnlocalizedName("trollsDagger");
+
+	}
+
+}

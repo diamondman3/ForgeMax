@@ -1,0 +1,15 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class DerpGrenadeItem {
+	
+	 public DerpGrenadeItem(){
+	        super(-8, -12.8F, true);
+	        this.setAlwaysEdible();
+	        this.setCreativeTab(CreativeTabs.tabFood);
+	        setUnlocalizedName("antibacon");
+	        setTextureName("derpmod:antibacon");
+	    }
+
+}
