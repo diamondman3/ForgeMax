@@ -1,0 +1,254 @@
+[10:03:41] [main/INFO]: Setting user: Player46
+[10:03:42] [Client thread/INFO]: LWJGL Version: 2.9.0
+[10:03:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:03:46] [Sound Library Loader/INFO]: Sound engine started
+[10:03:47] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:03:47] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:03:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:03:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:03:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:03:49] [Sound Library Loader/INFO]: Sound engine started
+[10:03:50] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[10:04:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:04:03] [Server thread/INFO]: Generating keypair
+[10:04:04] [Server thread/INFO]: Preparing start region for level 0
+[10:04:04] [Server thread/INFO]: Player46[local:E:107e875e] logged in with entity id 16 at (1.7930682594624154, 56.0, 1.8532242847781166)
+[10:04:04] [Server thread/INFO]: Player46 joined the game
+[10:04:10] [Server thread/INFO]: [Player46: Set the time to 1000]
+[10:04:10] [Client thread/INFO]: [CHAT] Set the time to 1000
+[10:04:12] [Client thread/INFO]: [CHAT] /gamemode, /gamerule
+[10:04:13] [Client thread/INFO]: [CHAT] /gamemode, /gamerule
+[10:04:16] [Server thread/INFO]: [Player46: Game rule has been updated]
+[10:04:16] [Client thread/INFO]: [CHAT] Game rule has been updated
+[10:04:17] [Server thread/INFO]: Saving and pausing game...
+[10:04:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:04:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:04:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:04:17] [Server thread/INFO]: Saving and pausing game...
+[10:04:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:04:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:04:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:04:20] [Client thread/INFO]: Selecting effect minecraft:shaders/post/fxaa.json
+[10:04:26] [Client thread/INFO]: Selecting effect minecraft:shaders/post/art.json
+[10:04:26] [Client thread/WARN]: Could not find uniform named LumaRamp in the specified shader program.
+[10:04:26] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:04:27] [Client thread/INFO]: Selecting effect minecraft:shaders/post/bumpy.json
+[10:04:27] [Client thread/WARN]: Could not find uniform named OutSize in the specified shader program.
+[10:04:28] [Client thread/INFO]: Selecting effect minecraft:shaders/post/blobs2.json
+[10:04:28] [Client thread/INFO]: Selecting effect minecraft:shaders/post/pencil.json
+[10:04:38] [Server thread/INFO]: Saving and pausing game...
+[10:04:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:04:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:04:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:04:39] [Client thread/INFO]: Selecting effect minecraft:shaders/post/color_convolve.json
+[10:04:39] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:04:48] [Server thread/INFO]: Saving and pausing game...
+[10:04:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:04:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:04:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:04:49] [Client thread/INFO]: Selecting effect minecraft:shaders/post/deconverge.json
+[10:04:56] [Server thread/INFO]: Player46 has just earned the achievement [Taking Inventory]
+[10:04:56] [Client thread/INFO]: [CHAT] Player46 has just earned the achievement [Taking Inventory]
+[10:05:16] [Client thread/ERROR]: ########## GL ERROR ##########
+[10:05:16] [Client thread/ERROR]: @ Post render
+[10:05:16] [Client thread/ERROR]: 1284: Stack underflow
+[10:05:19] [Server thread/INFO]: Saving and pausing game...
+[10:05:19] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:05:19] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:05:19] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:05:20] [Client thread/INFO]: Selecting effect minecraft:shaders/post/flip.json
+[10:05:31] [Server thread/INFO]: [Player46: Teleported Player46 to 0.5,56.0,0.5]
+[10:05:31] [Client thread/INFO]: [CHAT] Teleported Player46 to 0.5,56.0,0.5
+[10:05:49] [Server thread/INFO]: Saving and pausing game...
+[10:05:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:05:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:05:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:05:50] [Server thread/INFO]: Saving and pausing game...
+[10:05:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:05:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:05:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:05:52] [Client thread/INFO]: Selecting effect minecraft:shaders/post/invert.json
+[10:05:52] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:06:04] [Server thread/INFO]: Saving and pausing game...
+[10:06:04] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:04] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:04] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:05] [Client thread/INFO]: Selecting effect minecraft:shaders/post/ntsc.json
+[10:06:05] [Client thread/WARN]: Shader ntsc_decodecould not find sampler named BaseSampler in the specified shader program.
+[10:06:05] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:06:05] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:06:06] [Client thread/INFO]: Selecting effect minecraft:shaders/post/outline.json
+[10:06:06] [Client thread/INFO]: Selecting effect minecraft:shaders/post/phosphor.json
+[10:06:06] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:06:09] [Server thread/INFO]: Saving and pausing game...
+[10:06:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:11] [Client thread/INFO]: Selecting effect minecraft:shaders/post/scan_pincushion.json
+[10:06:14] [Server thread/INFO]: Saving and pausing game...
+[10:06:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:15] [Client thread/INFO]: Selecting effect minecraft:shaders/post/sobel.json
+[10:06:23] [Server thread/INFO]: Saving and pausing game...
+[10:06:23] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:23] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:23] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:24] [Client thread/INFO]: Selecting effect minecraft:shaders/post/bits.json
+[10:06:28] [Server thread/INFO]: Saving and pausing game...
+[10:06:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:29] [Client thread/INFO]: Selecting effect minecraft:shaders/post/desaturate.json
+[10:06:29] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:06:33] [Server thread/INFO]: Saving and pausing game...
+[10:06:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:33] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:33] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:34] [Client thread/INFO]: Selecting effect minecraft:shaders/post/green.json
+[10:06:34] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:06:36] [Server thread/INFO]: Saving and pausing game...
+[10:06:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:40] [Server thread/INFO]: Saving and pausing game...
+[10:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:41] [Client thread/INFO]: Selecting effect minecraft:shaders/post/blur.json
+[10:06:46] [Server thread/INFO]: Saving and pausing game...
+[10:06:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:06:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:06:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:06:47] [Client thread/INFO]: Selecting effect minecraft:shaders/post/wobble.json
+[10:06:47] [Client thread/WARN]: Could not find uniform named InSize in the specified shader program.
+[10:07:02] [Server thread/INFO]: Saving and pausing game...
+[10:07:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:07:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:07:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:07:03] [Client thread/INFO]: Selecting effect minecraft:shaders/post/blobs.json
+[10:07:03] [Client thread/WARN]: Could not find uniform named OutSize in the specified shader program.
+[10:07:04] [Client thread/INFO]: Selecting effect minecraft:shaders/post/antialias.json
+[10:07:04] [Client thread/WARN]: Could not find uniform named OutSize in the specified shader program.
+[10:07:08] [Server thread/INFO]: Saving and pausing game...
+[10:07:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:07:08] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:07:08] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:08:01] [Server thread/INFO]: Saving and pausing game...
+[10:08:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:08:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:08:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:08:01] [Server thread/INFO]: Stopping server
+[10:08:01] [Server thread/INFO]: Saving players
+[10:08:01] [Server thread/INFO]: Saving worlds
+[10:08:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:08:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:08:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:08:02] [Client thread/INFO]: Stopping!
+[10:36:27] [main/INFO]: Setting user: Player171
+[10:36:28] [Client thread/INFO]: LWJGL Version: 2.9.0
+[10:36:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:36:32] [Sound Library Loader/INFO]: Sound engine started
+[10:36:33] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:36:33] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:36:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:36:33] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:36:34] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:36:35] [Sound Library Loader/INFO]: Sound engine started
+[10:36:36] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[10:38:32] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:38:32] [Server thread/INFO]: Generating keypair
+[10:38:32] [Server thread/INFO]: Preparing start region for level 0
+[10:38:33] [Server thread/INFO]: Player171[local:E:9b142d49] logged in with entity id 0 at (0.7805586767283251, 56.0, 0.5891506927963117)
+[10:38:33] [Server thread/INFO]: Player171 joined the game
+[10:38:35] [Server thread/INFO]: Saving and pausing game...
+[10:38:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:38:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:38:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:38:46] [Server thread/INFO]: Player171 has just earned the achievement [Taking Inventory]
+[10:38:46] [Client thread/INFO]: [CHAT] Player171 has just earned the achievement [Taking Inventory]
+[10:40:19] [Server thread/INFO]: [Player171: Teleported Player171 to 500.5,56.5,500.5]
+[10:40:19] [Client thread/INFO]: [CHAT] Teleported Player171 to 500.5,56.5,500.5
+[10:41:15] [Server thread/INFO]: [Player171: Teleported Player171 to 0.5,56.5,0.5]
+[10:41:15] [Client thread/INFO]: [CHAT] Teleported Player171 to 0.5,56.5,0.5
+[10:42:00] [Server thread/INFO]: Saving and pausing game...
+[10:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:42:00] [Server thread/INFO]: Stopping server
+[10:42:00] [Server thread/INFO]: Saving players
+[10:42:00] [Server thread/INFO]: Saving worlds
+[10:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:42:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:42:01] [Client thread/INFO]: Stopping!
+[10:42:54] [main/INFO]: Setting user: Player359
+[10:42:55] [Client thread/INFO]: LWJGL Version: 2.9.0
+[10:42:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:42:59] [Sound Library Loader/INFO]: Sound engine started
+[10:43:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:43:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:43:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:43:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:43:01] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:43:02] [Sound Library Loader/INFO]: Sound engine started
+[10:43:03] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[10:43:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:43:17] [Server thread/INFO]: Generating keypair
+[10:43:18] [Server thread/INFO]: Preparing start region for level 0
+[10:43:18] [Server thread/INFO]: Player359[local:E:0b369a36] logged in with entity id 0 at (-2.5343358724479694, 56.0, 1.0359110580980153)
+[10:43:18] [Server thread/INFO]: Player359 joined the game
+[10:43:20] [Server thread/INFO]: Player359 has just earned the achievement [Taking Inventory]
+[10:43:20] [Client thread/INFO]: [CHAT] Player359 has just earned the achievement [Taking Inventory]
+[10:44:00] [Server thread/INFO]: Saving and pausing game...
+[10:44:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:44:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:44:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:44:01] [Server thread/INFO]: Stopping server
+[10:44:01] [Server thread/INFO]: Saving players
+[10:44:01] [Server thread/INFO]: Saving worlds
+[10:44:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:44:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:44:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:49:42] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:49:42] [Server thread/INFO]: Generating keypair
+[10:49:42] [Server thread/INFO]: Preparing start region for level 0
+[10:49:43] [Server thread/INFO]: Player359[local:E:fefa9b89] logged in with entity id 34280 at (-1.204136520303825, 56.0, 0.36644859700894666)
+[10:49:43] [Server thread/INFO]: Player359 joined the game
+[10:50:00] [Server thread/INFO]: [Player359: Teleported Player359 to 500.5,100.5,500.5]
+[10:50:00] [Client thread/INFO]: [CHAT] Teleported Player359 to 500.5,100.5,500.5
+[10:57:24] [Server thread/INFO]: Saving and pausing game...
+[10:57:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:57:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:57:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:57:25] [Server thread/INFO]: Stopping server
+[10:57:25] [Server thread/INFO]: Saving players
+[10:57:25] [Server thread/INFO]: Saving worlds
+[10:57:25] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[10:57:25] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[10:57:25] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[10:57:26] [Client thread/INFO]: Stopping!
+[11:53:42] [main/INFO]: Setting user: Player406
+[11:53:43] [Client thread/INFO]: LWJGL Version: 2.9.0
+[11:53:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[11:53:47] [Sound Library Loader/INFO]: Sound engine started
+[11:53:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:53:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:53:48] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[11:53:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:53:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:53:49] [Sound Library Loader/INFO]: Sound engine started
+[11:53:51] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[11:54:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[11:54:03] [Server thread/INFO]: Generating keypair
+[11:54:04] [Server thread/INFO]: Preparing start region for level 0
+[11:54:05] [Server thread/INFO]: Player406[local:E:8631e61b] logged in with entity id 0 at (479.9074347999162, 61.864368937703986, 499.2306448431685)
+[11:54:05] [Server thread/INFO]: Player406 joined the game
+[11:54:09] [Server thread/INFO]: Player406 has just earned the achievement [Taking Inventory]
+[11:54:09] [Client thread/INFO]: [CHAT] Player406 has just earned the achievement [Taking Inventory]
+[11:54:26] [Server thread/INFO]: [Player406: Set own game mode to Survival Mode]
+[11:54:26] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[11:54:39] [Server thread/INFO]: Saving and pausing game...
+[11:54:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[11:54:39] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[11:54:39] [Server thread/INFO]: Saving chunks for level 'New World'/The End

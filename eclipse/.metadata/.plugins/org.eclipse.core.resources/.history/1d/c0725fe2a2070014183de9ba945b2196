@@ -1,0 +1,43 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+public class PickOfDividingOresByAFraction extends ItemPickaxe{
+	
+	public PickOfDividingOresByAFraction(ToolMaterial material){
+		super(material);
+        setCreativeTab(CreativeTabs.tabTools);
+        setMaxStackSize(1);
+        setUnlocalizedName("pickOfDividingOresByAFraction");
+        setTextureName("derpmod:oreFracDivPick");
+	}
+
+    
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
+    {
+    	world.spawnEntityInWorld(new EntityItem(world, player.posX, player.posY, player.posZ, stack));
+        return stack;
+    }
+    
+    
+    public boolean onBlockDestroyed(ItemStack p_150894_1_, World world, Block p_150894_3_, int p_150894_4_, int p_150894_5_, int p_150894_6_, EntityLivingBase p_150894_7_)
+    {
+    	if(world.isRemote) {
+    		System.out.println("block destroyed");
+    	}
+    	
+        if ((double)p_150894_3_.getBlockHardness(world, p_150894_4_, p_150894_5_, p_150894_6_) != 0.0D)
+        {
+            p_150894_1_.damageItem(1, p_150894_7_);
+        }
+
+        return true;
+    }
+}

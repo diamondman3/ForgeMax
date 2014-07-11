@@ -1,0 +1,17 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemSword;
+
+public class MudkipFinOfCrashing extends ItemSword{
+	
+    public MudkipFinOfCrashing(ToolMaterial material){
+        super(material);
+        setCreativeTab(CreativeTabs.tabCombat);
+        setMaxStackSize(1);
+        setTextureName("derpmod:mudkipFinOfCrashing");
+        setUnlocalizedName("mudkipFinOfCashing");
+
+    }
+
+}

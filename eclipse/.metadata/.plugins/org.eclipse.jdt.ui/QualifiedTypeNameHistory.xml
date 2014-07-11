@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="net.minecraft.world.chunk.IChunkProvider"/>
-<fullyQualifiedTypeName name="com.tildenprep.derpmod.DerpMod"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemSword"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
 <fullyQualifiedTypeName name="com.tildenprep.derpmod.client.TrollsDagger"/>
 <fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
 <fullyQualifiedTypeName name="net.minecraft.potion.PotionEffect"/>
-<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="com.tildenprep.derpmod.client.DerpArmor"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemArmor.ArmorMaterial"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="scala.util.parsing.combinator.PackratParsers.Head"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="com.tildenprep.model.RageGuy"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.EntityRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityList"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityList.EntityEggInfo"/>
+<fullyQualifiedTypeName name="net.minecraft.client.model.ModelBiped"/>
+<fullyQualifiedTypeName name="com.tildenprep.derpmod.DerpMod"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderBiped"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.RenderLiving"/>
+<fullyQualifiedTypeName name="com.tildenprep.derpmod.render.RenderRageGuy"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemPickaxe"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="com.tildenprep.derpmod.entity.ScrollSpellEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemRecord"/>
 </qualifiedTypeNameHistroy>

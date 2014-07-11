@@ -3,15 +3,19 @@ package com.tildenprep.derpmod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 
 import com.tildenprep.derpmod.client.Antibacon;
 import com.tildenprep.derpmod.client.ClientProxy;
 import com.tildenprep.derpmod.client.CompleteRageIngot;
+import com.tildenprep.derpmod.client.DerpArmor;
 import com.tildenprep.derpmod.client.DerpAxe;
 import com.tildenprep.derpmod.client.DerpGrenadeItem;
 import com.tildenprep.derpmod.client.DerpHoe;
@@ -19,9 +23,14 @@ import com.tildenprep.derpmod.client.DerpIngot;
 import com.tildenprep.derpmod.client.DerpPickaxe;
 import com.tildenprep.derpmod.client.DerpShovel;
 import com.tildenprep.derpmod.client.DerpSword;
+import com.tildenprep.derpmod.client.ExplosionScroll;
+import com.tildenprep.derpmod.client.MudkipFinOfCrashing;
+import com.tildenprep.derpmod.client.PickOfDividingOresByAFraction;
 import com.tildenprep.derpmod.client.TrollGem;
 import com.tildenprep.derpmod.client.TrollsDagger;
 import com.tildenprep.derpmod.client.UnfinishedRageIngot;
+import com.tildenprep.derpmod.entity.EntityDerpGrenade;
+import com.tildenprep.derpmod.entity.EntityManager;
 import com.tildenprep.derpmod.world.DerpWorld;
 
 import cpw.mods.fml.common.Mod;
@@ -53,12 +62,21 @@ public class DerpMod
 	public static Item derpAxe;
 	public static Item derpHoe;
 	public static Item derpGrenade;
+	public static Item derpHelmet;
+	public static Item derpShirt;
+	public static Item derpPants;
+	public static Item derpBoots;
 
 	public static Item trollGem;
 	public static Item trollsDagger;
+	public static Item oreFracDivPick;
+	public static Item explosionScroll;
 
 	public static UnfinishedRageIngot unfinishedRageIngot;
 	public static CompleteRageIngot cri;
+	public static Item rickRollDisc;
+
+	public static Item mfoc;
 	
 	public static Item antibacon;
 	
@@ -74,6 +92,8 @@ public class DerpMod
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		EntityManager.mainRegistry();
+		
 		GameRegistry.registerBlock(derpOre, "Derp Ore");
 		GameRegistry.registerBlock(trollOre, "Troll Ore");
 		GameRegistry.registerBlock(rageOre, "Rage Ore");
@@ -84,7 +104,7 @@ public class DerpMod
 		GameRegistry.registerItem(derpIngot, "derpIngot");
 		GameRegistry.addShapelessRecipe(new ItemStack(derpIngot, 1), new ItemStack(Items.cooked_porkchop), new ItemStack(Items.dye, 0), new ItemStack(Items.iron_ingot), new ItemStack(Items.emerald));
 		Item.ToolMaterial derpM = new EnumHelper().addToolMaterial("Derp", 5, 251, 100F, 2F, 30);
-
+		final ArmorMaterial derpArmorMat = new EnumHelper().addArmorMaterial("Derp", 549, new int[]{2,6,5,2}, 16);;
 
 		GameRegistry.registerBlock(derpBlock, "Derp Block");
 		GameRegistry.addShapedRecipe(new ItemStack(derpBlock, 1), "ddd", "ddd", "ddd", 'd', dIS);
@@ -118,12 +138,39 @@ public class DerpMod
 		GameRegistry.addShapedRecipe(new ItemStack(derpHoe, 1), "dd ", " s ", " s ", 'd', dIS, 's', new ItemStack(Items.stick));
 		GameRegistry.addShapedRecipe(new ItemStack(derpHoe, 1), " dd", " s ", " s ", 'd', dIS, 's', new ItemStack(Items.stick));
 
+		derpHelmet = new DerpArmor(derpArmorMat, this.proxy.addArmor("DerpHelmet"), 0);
+			derpHelmet.setUnlocalizedName("DerpHelmet");
+			derpHelmet.setCreativeTab(CreativeTabs.tabCombat);
+			derpHelmet.setTextureName("derpmod:derpHelmet");
+			GameRegistry.addShapedRecipe(new ItemStack(derpHelmet, 1), "ddd", "d d", "   ", 'd', dIS);
+			GameRegistry.addShapedRecipe(new ItemStack(derpHelmet, 1), "   ", "ddd", "d d", 'd', dIS);
+			GameRegistry.registerItem(derpHelmet,  derpHelmet.getUnlocalizedName());
+		derpShirt = new DerpArmor(derpArmorMat, this.proxy.addArmor("DerpShirt"), 1);
+			derpShirt.setUnlocalizedName("DerpShirt");
+			derpShirt.setCreativeTab(CreativeTabs.tabCombat);
+			derpShirt.setTextureName("derpmod:derpShirt");
+			GameRegistry.addShapedRecipe(new ItemStack(derpShirt, 1), "d d", "ddd", "ddd", 'd', dIS);
+			GameRegistry.registerItem(derpShirt,  derpShirt.getUnlocalizedName());
+		derpPants = new DerpArmor(derpArmorMat, this.proxy.addArmor("DerpPants"), 2);
+			derpPants.setUnlocalizedName("DerpPants");
+			derpPants.setCreativeTab(CreativeTabs.tabCombat);
+			derpPants.setTextureName("derpmod:derpPants");
+			GameRegistry.addShapedRecipe(new ItemStack(derpPants, 1), "ddd", "d d", "d d", 'd', dIS);
+			GameRegistry.registerItem(derpPants,  derpPants.getUnlocalizedName());
+		derpBoots = new DerpArmor(derpArmorMat, this.proxy.addArmor("DerpBoots"), 3);
+			derpBoots.setUnlocalizedName("DerpBoots");
+			derpBoots.setCreativeTab(CreativeTabs.tabCombat);
+			derpBoots.setTextureName("derpmod:derpBoots");
+			GameRegistry.addShapedRecipe(new ItemStack(derpBoots, 1), "d d", "d d", "   ", 'd', dIS);
+			GameRegistry.addShapedRecipe(new ItemStack(derpBoots, 1), "   ", "d d", "d d", 'd', dIS);
+			GameRegistry.registerItem(derpBoots,  derpBoots.getUnlocalizedName());
+		
 		derpGrenade = new DerpGrenadeItem();
 		GameRegistry.registerItem(derpGrenade, "DerpGrenade");
 		GameRegistry.addShapedRecipe(new ItemStack(derpGrenade, 4), " d ", "dtd", " d ", 'd', dIS, 't', new ItemStack(Blocks.tnt));
 
 		trollGem = new TrollGem();
-		ItemStack tGS = new ItemStack(trollGem, 1);
+		ItemStack tGS = new ItemStack(trollGem);
 		GameRegistry.registerItem(trollGem, "Troll Gem");
 		GameRegistry.addShapedRecipe(new ItemStack(trollGem, 8), "ooo", "oco", "ooo", 'o', new ItemStack(trollOre), 'c', new ItemStack(Items.coal));
 		Item.ToolMaterial trollM = new EnumHelper().addToolMaterial("Troll", 5, 1337, 100F, 1F, 30);
@@ -138,13 +185,17 @@ public class DerpMod
 		GameRegistry.addShapedRecipe(new ItemStack(trollsDagger, 1), " s "," g ", " g ", 'g', new ItemStack(trollGem), 's', new ItemStack(Items.stick));
 		GameRegistry.addShapedRecipe(new ItemStack(trollsDagger, 1), "  s","  g", "  g", 'g', new ItemStack(trollGem), 's', new ItemStack(Items.stick));
 		
+		oreFracDivPick = new PickOfDividingOresByAFraction(trollM);
+		GameRegistry.registerItem(oreFracDivPick, oreFracDivPick.getUnlocalizedName());
+		GameRegistry.addShapedRecipe(new ItemStack(oreFracDivPick, 1), "tet", " s ", " s ", 't', tGS, 'e', new ItemStack(Items.emerald, 1), 's', new ItemStack(Items.stick, 1));
+		
 		antibacon = new Antibacon();
 		GameRegistry.registerItem(antibacon, "Antibacon");
 		GameRegistry.addShapedRecipe(new ItemStack(antibacon, 8),"ppp", "ptp", "ppp", 'p', new ItemStack(Items.cooked_porkchop), 't', tGS);
 
 		GameRegistry.registerBlock(repeaterBomb, "Repeater Bomb");
-		GameRegistry.addShapedRecipe(new ItemStack(repeaterBomb, 1),"tgt","ggg","srs",'t',new ItemStack(Blocks.redstone_torch),'g',(trollGem),'s',(Blocks.stone),'r', (Items.repeater));
-
+		GameRegistry.addShapelessRecipe(new ItemStack(repeaterBomb, 1), Items.repeater, Blocks.tnt, trollGem);
+		
 		int entityId = EntityRegistry.findGlobalUniqueEntityId();
 		EntityRegistry.registerModEntity(EntityDerpGrenade.class, "EntityDerpGrenade", entityId, instance, 64, 1, true);
 		
@@ -174,6 +225,14 @@ public class DerpMod
 		GameRegistry.registerItem(cri, "Complete Rage Ingot");
 		ItemStack criStack = new ItemStack(cri,1);
 		
+		explosionScroll = new ExplosionScroll();
+		GameRegistry.registerItem(explosionScroll, explosionScroll.getUnlocalizedName());
+		GameRegistry.addShapedRecipe(new ItemStack(explosionScroll, 1), "spg", "rtg", "rps", 'p', Items.paper, 's', Items.stick, 'g', trollGem, 'r', cri, 't', Blocks.tnt);
+		GameRegistry.addShapedRecipe(new ItemStack(explosionScroll, 1), "gps", "gtr", "spr", 'p', Items.paper, 's', Items.stick, 'g', trollGem, 'r', cri, 't', Blocks.tnt);
+		GameRegistry.addShapedRecipe(new ItemStack(explosionScroll, 1), "spr", "gtr", "gps", 'p', Items.paper, 's', Items.stick, 'g', trollGem, 'r', cri, 't', Blocks.tnt);;
+		GameRegistry.addShapedRecipe(new ItemStack(explosionScroll, 1), "rps", "rtg", "spg", 'p', Items.paper, 's', Items.stick, 'g', trollGem, 'r', cri, 't', Blocks.tnt);
+		
+		
 		GameRegistry.addSmelting(rageOre, uris0, 0F);
 		GameRegistry.addSmelting(uris0, uris1, 0F);
 		GameRegistry.addSmelting(uris1, uris2, 0F);
@@ -190,6 +249,12 @@ public class DerpMod
 		GameRegistry.addShapedRecipe(new ItemStack(rageBlock, 1), "rrr", "rrr", "rrr", 'r', criStack);
 		GameRegistry.addShapelessRecipe(new ItemStack(cri, 9), new ItemStack(rageBlock, 1));
 
+		//GameRegistry.registerItem(rickRollDisc, "rickRollDisc");
+		
+		
+		mfoc = new MudkipFinOfCrashing(trollM);
+		//GameRegistry.addShapedRecipe(new ItemStack(mfoc, 1), "wtw", "trt", "   ", 'w',new ItemStack(Items.water_bucket), 't', new ItemStack(trollBlock), 'r', new ItemStack(rageBlock)); 
+		//GameRegistry.addShapedRecipe(new ItemStack(mfoc, 1), "   ", "wtw", "trt", 'w',new ItemStack(Items.water_bucket), 't', new ItemStack(trollBlock), 'r', new ItemStack(rageBlock)); 
 	}
 
 	@EventHandler

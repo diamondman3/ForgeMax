@@ -1,0 +1,25 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+
+public class DerpArmor extends ItemArmor{
+	
+	public DerpArmor(ArmorMaterial material, int x, int y){
+		super(material, x, y);
+	}
+	
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
+		if(slot == 0 || slot == 1 || slot == 3){
+			return StringLibrary.MODID + ":texures/models/armor/derpArmorLayer1.png";
+		}
+		else if(slot == 2){
+			return StringLibrary.MODID + ":texures/models/armor/derpArmorLayer2.png";
+		}
+		else{
+			return null;
+		}
+	}
+
+}

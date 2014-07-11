@@ -1,0 +1,27 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+
+public class PickOfDividingOresByAFraction extends ItemPickaxe{
+	
+	public PickOfDividingOresByAFraction(ToolMaterial material){
+		super(material);
+        setCreativeTab(CreativeTabs.tabTools);
+        setMaxStackSize(1);
+        setUnlocalizedName("pickOfDividingOresByAFraction");
+        setTextureName("derpmod:oreFracDivPick");
+	}
+
+    
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
+    {
+    	System.out.println("pick axe being used");
+    	world.spawnEntityInWorld(stack.getItem().createEntity(world, null, stack));
+        return stack;
+    }
+}

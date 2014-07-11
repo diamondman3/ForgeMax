@@ -6,13 +6,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import com.tildenprep.derpmod.EntityDerpGrenade;
+import com.tildenprep.derpmod.entity.EntityDerpGrenade;
 
 public class DerpGrenadeItem extends Item {
 	
 	 public DerpGrenadeItem(){
 	        super();
-	        this.setCreativeTab(CreativeTabs.tabTools);
+	        this.setCreativeTab(CreativeTabs.tabMisc);
 	        setUnlocalizedName("derpGrenade");
 	        setTextureName("derpmod:derpGrenade");
 	        setMaxStackSize(8);
@@ -27,7 +27,6 @@ public class DerpGrenadeItem extends Item {
 	      w.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 	      if (!w.isRemote)
 	      {
-	    	  System.out.println("making entity");
 	          w.spawnEntityInWorld(new EntityDerpGrenade(w, player));
 	      }
 	      return stack;

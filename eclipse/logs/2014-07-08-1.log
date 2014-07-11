@@ -1,0 +1,446 @@
+[09:42:49] [main/INFO]: Setting user: Player140
+[09:42:50] [Client thread/INFO]: LWJGL Version: 2.9.0
+[09:42:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[09:42:53] [Sound Library Loader/INFO]: Sound engine started
+[09:42:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[09:42:55] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:892) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[09:42:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[09:42:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[09:42:55] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:626) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:585) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:892) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[09:42:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[09:42:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[09:42:56] [Sound Library Loader/INFO]: Sound engine started
+[09:42:57] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[09:43:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[09:43:03] [Server thread/INFO]: Generating keypair
+[09:43:04] [Server thread/INFO]: Preparing start region for level 0
+[09:43:05] [Server thread/INFO]: Player140[local:E:e0af5fbe] logged in with entity id 0 at (948.8118327560111, 56.0, 555.7874628639686)
+[09:43:05] [Server thread/INFO]: Player140 joined the game
+[09:43:16] [Client thread/WARN]: Failed to load texture: derpmod:texures/models/armor/derpArmorLayer1.png
+java.io.FileNotFoundException: derpmod:texures/models/armor/derpArmorLayer1.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:35) ~[SimpleTexture.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.bindTexture(TextureManager.java:45) [TextureManager.class:?]
+	at net.minecraft.client.renderer.entity.Render.bindTexture(Render.java:62) [Render.class:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:74) [RenderPlayer.class:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.shouldRenderPass(RenderPlayer.java:516) [RenderPlayer.class:?]
+	at net.minecraft.client.renderer.entity.RendererLivingEntity.doRender(RendererLivingEntity.java:173) [RendererLivingEntity.class:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:171) [RenderPlayer.class:?]
+	at net.minecraft.client.renderer.entity.RenderPlayer.doRender(RenderPlayer.java:564) [RenderPlayer.class:?]
+	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300) [RenderManager.class:?]
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityWithPosYaw(RenderManager.java:283) [RenderManager.class:?]
+	at net.minecraft.client.gui.inventory.GuiInventory.func_147046_a(GuiInventory.java:116) [GuiInventory.class:?]
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawGuiContainerBackgroundLayer(GuiContainerCreative.java:838) [GuiContainerCreative.class:?]
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:97) [GuiContainer.class:?]
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44) [InventoryEffectRenderer.class:?]
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:672) [GuiContainerCreative.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1145) [EntityRenderer.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1025) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:912) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[09:43:25] [Server thread/INFO]: Saving and pausing game...
+[09:43:25] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:43:25] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:43:25] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:43:26] [Server thread/INFO]: Stopping server
+[09:43:26] [Server thread/INFO]: Saving players
+[09:43:26] [Server thread/INFO]: Saving worlds
+[09:43:26] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:43:26] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:43:26] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:43:27] [Client thread/INFO]: Stopping!
+[09:44:02] [main/INFO]: Setting user: Player671
+[09:44:03] [Client thread/INFO]: LWJGL Version: 2.9.0
+[09:44:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[09:44:07] [Sound Library Loader/INFO]: Sound engine started
+[09:44:08] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[09:44:08] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:582) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:892) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[09:44:08] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[09:44:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[09:44:09] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4102_DerpHelmet.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:626) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:585) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:892) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:112) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.7.0_51]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[09:44:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[09:44:09] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[09:44:10] [Sound Library Loader/INFO]: Sound engine started
+[09:44:11] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[09:44:13] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[09:44:13] [Server thread/INFO]: Generating keypair
+[09:44:14] [Server thread/INFO]: Preparing start region for level 0
+[09:44:15] [Server thread/INFO]: Player671[local:E:32cc83da] logged in with entity id 0 at (948.8118327560111, 56.0, 555.7874628639686)
+[09:44:15] [Server thread/INFO]: Player671 joined the game
+[09:44:25] [Server thread/INFO]: Player671 has just earned the achievement [Taking Inventory]
+[09:44:25] [Client thread/INFO]: [CHAT] Player671 has just earned the achievement [Taking Inventory]
+[09:45:56] [Server thread/INFO]: [Player671: Game rule has been updated]
+[09:45:56] [Client thread/INFO]: [CHAT] Game rule has been updated
+[09:46:33] [Server thread/INFO]: Saving and pausing game...
+[09:46:33] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:46:33] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:46:33] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:46:36] [Server thread/INFO]: Saving and pausing game...
+[09:46:36] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:46:36] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:46:36] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:46:38] [Server thread/INFO]: Saving and pausing game...
+[09:46:38] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:46:38] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:46:38] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:46:50] [Server thread/INFO]: [Player671: Set own game mode to Survival Mode]
+[09:46:50] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:46:56] [Client thread/WARN]: Unable to play unknown soundEvent: derpmod:trollSongClip
+[09:47:05] [Client thread/INFO]: [CHAT] minecraft:record_13, minecraft:cauldron, minecraft:heavy_weighted_pressure_plate, minecraft:wooden_pickaxe, minecraft:cooked_porkchop, minecraft:chainmail_leggings, minecraft:bread, minecraft:emerald_block, minecraft:birch_stairs, minecraft:melon_block, minecraft:iron_block, minecraft:item_frame, minecraft:comparator, minecraft:coal, minecraft:sapling, minecraft:compass, minecraft:diamond_shovel, minecraft:stone, minecraft:flowing_lava, minecraft:wheat_seeds, minecraft:diamond_horse_armor, minecraft:jukebox, minecraft:carrot_on_a_stick, minecraft:record_ward, minecraft:diamond_leggings, minecraft:gold_ingot, minecraft:cake, minecraft:record_mall, minecraft:diamond_boots, minecraft:cooked_beef, minecraft:writable_book, minecraft:flowing_water, minecraft:brick, minecraft:feather, minecraft:wool, minecraft:porkchop, minecraft:iron_horse_armor, minecraft:netherrack, minecraft:log2, minecraft:name_tag, minecraft:torch, minecraft:redstone_ore, minecraft:furnace, minecraft:fire_charge, minecraft:spruce_stairs, minecraft:stone_stairs, minecraft:ice, minecraft:reeds, minecraft:gunpowder, minecraft:double_plant, minecraft:carrot, minecraft:bucket, minecraft:golden_sword, minecraft:minecart, minecraft:brick_block, minecraft:nether_brick, minecraft:iron_helmet, minecraft:enchanting_table, minecraft:diamond, minecraft:stonebrick, minecraft:vine, minecraft:log, minecraft:repeater, minecraft:coal_block, minecraft:stone_button, minecraft:gold_block, minecraft:golden_horse_armor, minecraft:glass_bottle, minecraft:quartz_block, minecraft:end_portal, minecraft:fish, minecraft:quartz_ore, minecraft:stained_hardened_clay, minecraft:command_block, minecraft:bowl, minecraft:waterlily, minecraft:dark_oak_stairs, minecraft:oak_stairs, minecraft:grass, minecraft:mycelium, minecraft:cobblestone, minecraft:arrow, minecraft:quartz_stairs, minecraft:ender_chest, minecraft:quartz, minecraft:dirt, minecraft:bow, minecraft:anvil, minecraft:lava, minecraft:diamond_hoe, minecraft:lit_furnace, minecraft:diamond_block, minecraft:filled_map, minecraft:jungle_stairs, minecraft:melon, minecraft:chest_minecart, minecraft:stone_pressure_plate, minecraft:gold_ore, minecraft:golden_boots, minecraft:wooden_shovel, minecraft:hopper, minecraft:enchanted_book, minecraft:spider_eye, minecraft:baked_potato, minecraft:melon_seeds, minecraft:brown_mushroom, minecraft:yellow_flower, minecraft:redstone_torch, minecraft:hopper_minecart, minecraft:double_wooden_slab, minecraft:flint_and_steel, minecraft:string, minecraft:leaves2, minecraft:farmland, minecraft:nether_star, minecraft:brewing_stand, minecraft:glowstone, minecraft:apple, minecraft:boat, minecraft:record_wait, minecraft:potato, minecraft:pumpkin, minecraft:dragon_egg, minecraft:blaze_rod, minecraft:sandstone, minecraft:detector_rail, minecraft:light_weighted_pressure_plate, minecraft:golden_hoe, minecraft:painting, minecraft:stone_hoe, minecraft:golden_shovel, minecraft:iron_chestplate, minecraft:record_stal, minecraft:skull, minecraft:lava_bucket, minecraft:leather_chestplate, minecraft:stone_pickaxe, minecraft:record_mellohi, minecraft:cookie, minecraft:diamond_pickaxe, minecraft:cactus, minecraft:lapis_ore, minecraft:cooked_fished, minecraft:redstone_block, minecraft:sandstone_stairs, minecraft:blaze_powder, minecraft:diamond_helmet, minecraft:command_block_minecart, minecraft:clock, minecraft:iron_leggings, minecraft:wooden_hoe, minecraft:slime_ball, minecraft:rotten_flesh, minecraft:saddle, minecraft:acacia_stairs, minecraft:record_blocks, minecraft:potion, minecraft:experience_bottle, minecraft:redstone, minecraft:netherbrick, minecraft:brick_stairs, minecraft:mushroom_stew, minecraft:map, minecraft:daylight_detector, minecraft:water_bucket, minecraft:lead, minecraft:chicken, minecraft:piston, minecraft:snow_layer, minecraft:firework_charge, minecraft:nether_wart, minecraft:red_mushroom, minecraft:chest, minecraft:fishing_rod, minecraft:iron_sword, minecraft:sticky_piston, minecraft:coal_ore, minecraft:golden_pickaxe, minecraft:bedrock, minecraft:pumpkin_pie, minecraft:iron_hoe, minecraft:record_11, minecraft:gravel, minecraft:crafting_table, minecraft:wheat, minecraft:wooden_pressure_plate, minecraft:pumpkin_seeds, minecraft:snowball, minecraft:iron_ingot, minecraft:lapis_block, minecraft:lever, minecraft:bone, minecraft:paper, minecraft:chainmail_chestplate, minecraft:leather, minecraft:end_portal_frame, minecraft:diamond_axe, minecraft:sign, minecraft:chainmail_helmet, minecraft:carrots, minecraft:noteblock, minecraft:glass, minecraft:fence, minecraft:clay_ball, minecraft:tallgrass, minecraft:milk_bucket, minecraft:packed_ice, minecraft:trapped_chest, minecraft:red_mushroom_block, minecraft:diamond_sword, minecraft:tnt_minecart, minecraft:flower_pot, minecraft:brown_mushroom_block, minecraft:emerald, minecraft:beacon, minecraft:gold_nugget, minecraft:red_flower, minecraft:golden_helmet, minecraft:dropper, minecraft:glass_pane, minecraft:leather_leggings, minecraft:iron_shovel, minecraft:book, minecraft:fire, minecraft:golden_apple, minecraft:dye, minecraft:leather_boots, minecraft:wooden_sword, minecraft:soul_sand, minecraft:diamond_ore, minecraft:deadbush, minecraft:fireworks, minecraft:speckled_melon, minecraft:bookshelf, minecraft:magma_cream, minecraft:redstone_lamp, minecraft:sand, minecraft:ender_pearl, minecraft:furnace_minecart, minecraft:iron_door, minecraft:snow, minecraft:wooden_door, minecraft:stone_brick_stairs, minecraft:portal, minecraft:chainmail_boots, minecraft:iron_boots, minecraft:golden_axe, minecraft:fence_gate, minecraft:ghast_tear, minecraft:obsidian, minecraft:diamond_chestplate, minecraft:ender_eye, minecraft:iron_pickaxe, minecraft:clay, minecraft:mossy_cobblestone, minecraft:stone_axe, minecraft:golden_carrot, minecraft:lit_pumpkin, minecraft:stick, minecraft:spawn_egg, minecraft:iron_ore, minecraft:web, minecraft:sugar, minecraft:golden_chestplate, minecraft:hay_block, minecraft:poisonous_potato, minecraft:nether_brick_stairs, minecraft:cooked_chicken, minecraft:wooden_button, minecraft:egg, minecraft:double_stone_slab, minecraft:wooden_axe, minecraft:tnt, minecraft:stone_slab, minecraft:potatoes, minecraft:emerald_ore, minecraft:beef, minecraft:record_cat, minecraft:leaves, minecraft:tripwire_hook, minecraft:fermented_spider_eye, minecraft:activator_rail, minecraft:trapdoor, minecraft:record_far, minecraft:leather_helmet, minecraft:written_book, minecraft:water, minecraft:golden_rail, minecraft:shears, minecraft:golden_leggings, minecraft:carpet, minecraft:flint, minecraft:nether_brick_fence, minecraft:record_strad, minecraft:planks, minecraft:glowstone_dust, minecraft:dispenser, minecraft:record_chirp, minecraft:hardened_clay, minecraft:bed, minecraft:stained_glass_pane, minecraft:sponge, minecraft:cocoa, minecraft:iron_bars, minecraft:stained_glass, minecraft:stone_sword, minecraft:rail, minecraft:monster_egg, minecraft:mob_spawner, minecraft:iron_axe, minecraft:wooden_slab, minecraft:stone_shovel, minecraft:cobblestone_wall, minecraft:ladder, minecraft:end_stone
+[09:47:08] [Client thread/INFO]: [CHAT] minecraft:cooked_porkchop, minecraft:cooked_beef, minecraft:cookie, minecraft:cooked_fished, minecraft:cooked_chicken
+[09:47:09] [Server thread/INFO]: [Player671: Given [Cooked Porkchop] * 1 to Player671]
+[09:47:09] [Client thread/INFO]: [CHAT] Given [Cooked Porkchop] * 1 to Player671
+[09:47:14] [Server thread/INFO]: [Player671: Set own game mode to Creative Mode]
+[09:47:14] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[09:47:14] [Server thread/INFO]: Saving and pausing game...
+[09:47:14] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:47:14] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:47:14] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:47:15] [Server thread/INFO]: Stopping server
+[09:47:15] [Server thread/INFO]: Saving players
+[09:47:15] [Server thread/INFO]: Saving worlds
+[09:47:15] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[09:47:15] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[09:47:15] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[09:47:16] [Client thread/INFO]: Stopping!
+[10:49:19] [main/INFO]: Setting user: Player203
+[10:49:20] [Client thread/INFO]: LWJGL Version: 2.9.0
+[10:49:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:49:23] [Sound Library Loader/INFO]: Sound engine started
+[10:49:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:49:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:49:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:49:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:49:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:49:26] [Sound Library Loader/INFO]: Sound engine started
+[10:49:27] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[10:50:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:50:27] [Server thread/INFO]: Generating keypair
+[10:50:27] [Server thread/INFO]: Preparing start region for level 0
+[10:50:28] [Server thread/INFO]: Player203[local:E:502fb345] logged in with entity id 0 at (976.5682840019688, 56.0, 552.921244088446)
+[10:50:28] [Server thread/INFO]: Player203 joined the game
+[10:50:29] [Server thread/INFO]: Player203 has just earned the achievement [Taking Inventory]
+[10:50:29] [Client thread/INFO]: [CHAT] Player203 has just earned the achievement [Taking Inventory]
+[10:50:57] [Server thread/INFO]: Saving and pausing game...
+[10:50:57] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[10:50:57] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[10:50:57] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[10:50:58] [Server thread/INFO]: Stopping server
+[10:50:58] [Server thread/INFO]: Saving players
+[10:50:58] [Server thread/INFO]: Saving worlds
+[10:50:58] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[10:50:58] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[10:50:58] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[10:50:59] [Client thread/INFO]: Stopping!
+[10:51:36] [main/INFO]: Setting user: Player250
+[10:51:37] [Client thread/INFO]: LWJGL Version: 2.9.0
+[10:51:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:51:41] [Sound Library Loader/INFO]: Sound engine started
+[10:51:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:51:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:51:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[10:51:42] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[10:51:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[10:51:43] [Sound Library Loader/INFO]: Sound engine started
+[10:51:45] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[10:51:55] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[10:51:55] [Server thread/INFO]: Generating keypair
+[10:51:56] [Server thread/INFO]: Preparing start region for level 0
+[10:51:57] [Server thread/INFO]: Player250[local:E:b3f80ac6] logged in with entity id 0 at (976.5682840019688, 56.0, 552.921244088446)
+[10:51:57] [Server thread/INFO]: Player250 joined the game
+[10:51:59] [Server thread/INFO]: Player250 has just earned the achievement [Taking Inventory]
+[10:51:59] [Client thread/INFO]: [CHAT] Player250 has just earned the achievement [Taking Inventory]
+[10:53:42] [Server thread/INFO]: Saving and pausing game...
+[10:53:42] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[10:53:42] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[10:53:42] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[10:53:43] [Server thread/INFO]: Stopping server
+[10:53:43] [Server thread/INFO]: Saving players
+[10:53:43] [Server thread/INFO]: Saving worlds
+[10:53:43] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[10:53:43] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[10:53:43] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[10:53:44] [Client thread/INFO]: Stopping!
+[11:02:54] [main/INFO]: Setting user: Player609
+[11:02:55] [Client thread/INFO]: LWJGL Version: 2.9.0
+[11:02:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[11:03:00] [Sound Library Loader/INFO]: Sound engine started
+[11:03:01] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:03:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:03:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[11:03:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:03:02] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:03:03] [Sound Library Loader/INFO]: Sound engine started
+[11:03:04] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[11:06:49] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[11:06:49] [Server thread/INFO]: Generating keypair
+[11:06:50] [Server thread/INFO]: Preparing start region for level 0
+[11:06:50] [Server thread/INFO]: Player609[local:E:3e36d33d] logged in with entity id 0 at (973.6956576176983, 56.0, 553.3998587130177)
+[11:06:50] [Server thread/INFO]: Player609 joined the game
+[11:06:52] [Server thread/INFO]: Player609 has just earned the achievement [Taking Inventory]
+[11:06:52] [Client thread/INFO]: [CHAT] Player609 has just earned the achievement [Taking Inventory]
+[11:07:17] [Server thread/INFO]: [Player609: Teleported Player609 to 0.5,64.5,0.5]
+[11:07:17] [Client thread/INFO]: [CHAT] Teleported Player609 to 0.5,64.5,0.5
+[11:07:48] [Server thread/INFO]: Saving and pausing game...
+[11:07:48] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[11:07:48] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[11:07:48] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[11:07:51] [Server thread/INFO]: Saving and pausing game...
+[11:07:51] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[11:07:51] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[11:07:51] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[11:07:52] [Server thread/INFO]: Stopping server
+[11:07:52] [Server thread/INFO]: Saving players
+[11:07:52] [Server thread/INFO]: Saving worlds
+[11:07:52] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[11:07:52] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[11:07:52] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[11:07:53] [Client thread/INFO]: Stopping!
+[11:08:12] [main/INFO]: Setting user: Player437
+[11:08:13] [Client thread/INFO]: LWJGL Version: 2.9.0
+[11:08:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[11:08:17] [Sound Library Loader/INFO]: Sound engine started
+[11:08:19] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:08:19] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:08:19] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[11:08:19] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:08:19] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:08:20] [Sound Library Loader/INFO]: Sound engine started
+[11:08:22] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[11:10:10] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[11:10:10] [Server thread/INFO]: Generating keypair
+[11:10:10] [Server thread/INFO]: Preparing start region for level 0
+[11:10:11] [Server thread/INFO]: Player437[local:E:8c8c4290] logged in with entity id 0 at (0.5, 56.0, 0.5)
+[11:10:11] [Server thread/INFO]: Player437 joined the game
+[11:10:14] [Server thread/INFO]: Player437 has just earned the achievement [Taking Inventory]
+[11:10:14] [Client thread/INFO]: [CHAT] Player437 has just earned the achievement [Taking Inventory]
+[11:12:02] [Client thread/INFO]: [CHAT] Unknown command. Try /help for a list of commands
+[11:12:09] [Server thread/INFO]: [Player437: Block placed]
+[11:12:09] [Client thread/INFO]: [CHAT] Block placed
+[11:13:21] [Server thread/INFO]: [Player437: Set the time to 5000]
+[11:13:21] [Client thread/INFO]: [CHAT] Set the time to 5000
+[11:13:23] [Client thread/INFO]: [CHAT] /gamemode, /gamerule
+[11:13:23] [Client thread/INFO]: [CHAT] /gamemode, /gamerule
+[11:13:26] [Server thread/INFO]: [Player437: Game rule has been updated]
+[11:13:26] [Client thread/INFO]: [CHAT] Game rule has been updated
+[11:13:33] [Server thread/INFO]: Saving and pausing game...
+[11:13:33] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[11:13:33] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[11:13:33] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[11:13:33] [Server thread/INFO]: Stopping server
+[11:13:33] [Server thread/INFO]: Saving players
+[11:13:33] [Server thread/INFO]: Saving worlds
+[11:13:33] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[11:13:33] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[11:13:33] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[11:13:34] [Client thread/INFO]: Stopping!
+[13:13:05] [main/INFO]: Setting user: Player250
+[13:13:06] [Client thread/INFO]: LWJGL Version: 2.9.0
+[13:13:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[13:13:10] [Sound Library Loader/INFO]: Sound engine started
+[13:13:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:13:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:13:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[13:13:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:13:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:13:13] [Sound Library Loader/INFO]: Sound engine started
+[13:13:15] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[13:13:18] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[13:13:18] [Server thread/INFO]: Generating keypair
+[13:13:18] [Server thread/INFO]: Preparing start region for level 0
+[13:13:19] [Server thread/INFO]: Player250[local:E:0eb990bd] logged in with entity id 0 at (0.687217552222714, 56.0, 0.583738813265498)
+[13:13:19] [Server thread/INFO]: Player250 joined the game
+[13:13:26] [Server thread/INFO]: Saving and pausing game...
+[13:13:26] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:13:26] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:13:26] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:13:27] [Server thread/INFO]: Stopping server
+[13:13:27] [Server thread/INFO]: Saving players
+[13:13:27] [Server thread/INFO]: Saving worlds
+[13:13:27] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:13:27] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:13:27] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:13:28] [Client thread/INFO]: Stopping!
+[13:47:53] [main/INFO]: Setting user: Player78
+[13:47:54] [Client thread/INFO]: LWJGL Version: 2.9.0
+[13:47:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[13:47:58] [Sound Library Loader/INFO]: Sound engine started
+[13:47:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:47:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:47:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[13:47:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:48:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:48:00] [Sound Library Loader/INFO]: Sound engine started
+[13:48:02] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[13:48:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[13:48:04] [Server thread/INFO]: Generating keypair
+[13:48:04] [Server thread/INFO]: Preparing start region for level 0
+[13:48:05] [Server thread/INFO]: Player78[local:E:66681aa9] logged in with entity id 0 at (0.25274158073702996, 56.0, 0.46650518782266137)
+[13:48:05] [Server thread/INFO]: Player78 joined the game
+[13:48:06] [Server thread/INFO]: Player78 has just earned the achievement [Taking Inventory]
+[13:48:06] [Client thread/INFO]: [CHAT] Player78 has just earned the achievement [Taking Inventory]
+[13:48:29] [Server thread/INFO]: Saving and pausing game...
+[13:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:48:29] [Server thread/INFO]: Stopping server
+[13:48:29] [Server thread/INFO]: Saving players
+[13:48:29] [Server thread/INFO]: Saving worlds
+[13:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:48:29] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:48:31] [Client thread/INFO]: Stopping!
+[13:49:34] [main/INFO]: Setting user: Player484
+[13:49:35] [Client thread/INFO]: LWJGL Version: 2.9.0
+[13:49:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[13:49:39] [Sound Library Loader/INFO]: Sound engine started
+[13:49:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:49:41] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:49:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[13:49:41] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:49:41] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:49:42] [Sound Library Loader/INFO]: Sound engine started
+[13:49:43] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[13:49:46] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[13:49:46] [Server thread/INFO]: Generating keypair
+[13:49:46] [Server thread/INFO]: Preparing start region for level 0
+[13:49:47] [Server thread/INFO]: Player484[local:E:a462569c] logged in with entity id 0 at (-1.0268623028352217, 56.0, 0.3237750208210466)
+[13:49:47] [Server thread/INFO]: Player484 joined the game
+[13:50:48] [Server thread/INFO]: Player484 has just earned the achievement [Taking Inventory]
+[13:50:48] [Client thread/INFO]: [CHAT] Player484 has just earned the achievement [Taking Inventory]
+[13:51:28] [Server thread/INFO]: [Player484: Set own game mode to Survival Mode]
+[13:51:28] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[13:51:33] [Client thread/INFO]: [CHAT] Saved screenshot as 2014-07-08_13.51.33.png
+[13:51:36] [Server thread/INFO]: Saving and pausing game...
+[13:51:36] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:51:36] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:51:36] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:51:46] [Client thread/INFO]: [CHAT] Saved screenshot as 2014-07-08_13.51.46.png
+[13:51:57] [Server thread/INFO]: [Player484: Set own game mode to Creative Mode]
+[13:51:57] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[13:52:08] [Server thread/INFO]: Saving and pausing game...
+[13:52:08] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:52:08] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:52:08] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:52:09] [Server thread/INFO]: Stopping server
+[13:52:09] [Server thread/INFO]: Saving players
+[13:52:09] [Server thread/INFO]: Saving worlds
+[13:52:09] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[13:52:09] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[13:52:09] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[13:52:09] [Client thread/INFO]: Stopping!
+[15:47:40] [main/INFO]: Setting user: Player578
+[15:47:41] [Client thread/INFO]: LWJGL Version: 2.9.0
+[15:47:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[15:47:45] [Sound Library Loader/INFO]: Sound engine started
+[15:47:46] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:47:46] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:47:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:DerpMod
+[15:47:47] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:47:47] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:47:48] [Sound Library Loader/INFO]: Sound engine started
+[15:47:49] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[15:47:50] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[15:47:50] [Server thread/INFO]: Generating keypair
+[15:47:51] [Server thread/INFO]: Preparing start region for level 0
+[15:47:51] [Server thread/INFO]: Player578[local:E:62c3ea77] logged in with entity id 0 at (-0.5489463347696396, 56.0, 2.426369371828562)
+[15:47:51] [Server thread/INFO]: Player578 joined the game
+[15:47:59] [Server thread/INFO]: Player578 has just earned the achievement [Taking Inventory]
+[15:47:59] [Client thread/INFO]: [CHAT] Player578 has just earned the achievement [Taking Inventory]
+[15:49:48] [Server thread/INFO]: [Player578: Teleported Player578 to -0.5,56.0,-0.5]
+[15:49:48] [Client thread/INFO]: [CHAT] Teleported Player578 to -0.5,56.0,-0.5
+[15:50:06] [Server thread/INFO]: [Player578: Teleported Player578 to 0.5,56.0,0.5]
+[15:50:06] [Client thread/INFO]: [CHAT] Teleported Player578 to 0.5,56.0,0.5
+[15:50:59] [Server thread/INFO]: Saving and pausing game...
+[15:50:59] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[15:50:59] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[15:50:59] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[15:51:00] [Server thread/INFO]: Stopping server
+[15:51:00] [Server thread/INFO]: Saving players
+[15:51:00] [Server thread/INFO]: Saving worlds
+[15:51:00] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[15:51:00] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[15:51:00] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[15:51:00] [Client thread/INFO]: Stopping!

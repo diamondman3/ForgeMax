@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="305" key="DIALOG_WIDTH"/>
-		<item value="434" key="DIALOG_Y_ORIGIN"/>
-		<item value="999" key="DIALOG_X_ORIGIN"/>
-		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="160" key="DIALOG_Y_ORIGIN"/>
+		<item value="348" key="DIALOG_X_ORIGIN"/>
+		<item value="406" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,18 +13,26 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="unfinishedRageIngot" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
-			<item value="unfinishedRageIngot"/>
-			<item value="update"/>
-			<item value="text"/>
-			<item value="onNeighborBlockChange"/>
-			<item value="neigh"/>
-			<item value="model"/>
-			<item value="onitemright"/>
-			<item value="onitem"/>
+			<item value="path"/>
+			<item value="musicPath"/>
+			<item value="field_150928_b"/>
+			<item value="p_i45350_1_"/>
+			<item value="func_72706_a"/>
+			<item value="ogg"/>
+			<item value="record"/>
+			<item value="music"/>
 		</list>
 		<list key="replacehistory">
+			<item value="ScrollSpellEntity"/>
+			<item value=", 1, 4);"/>
+			<item value=");"/>
+			<item value="1"/>
+			<item value="player"/>
+			<item value="block"/>
+			<item value="stack"/>
+			<item value="world"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">

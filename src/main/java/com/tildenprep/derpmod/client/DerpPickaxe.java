@@ -1,8 +1,12 @@
 package com.tildenprep.derpmod.client;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 /**
  * Created by kenny on 4/2/14.
@@ -18,4 +22,5 @@ public class DerpPickaxe extends ItemPickaxe {
         setTextureName("derpmod:derpPickaxe");
 
     }
+
 }

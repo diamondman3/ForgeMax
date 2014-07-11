@@ -1,0 +1,23 @@
+package com.tildenprep.derpmod.render;
+
+import com.tildenprep.derpmod.DerpMod;
+
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderBiped;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+
+public class RenderCustomBiped extends RenderBiped {
+
+	public RenderCustomBiped(ModelBiped modelBiped, float f) {
+		super(modelBiped, f);
+	}
+
+	@Override
+	protected ResourceLocation getEntityTexture(Entity var1) {
+		// TODO Auto-generated method stub
+		return new ResourceLocation(DerpMod.MODID + ":/textures/entity/rageGuy.png");
+	}
+
+}

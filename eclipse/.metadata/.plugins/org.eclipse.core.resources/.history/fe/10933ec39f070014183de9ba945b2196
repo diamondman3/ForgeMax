@@ -1,0 +1,17 @@
+package com.tildenprep.derpmod.client;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemPickaxe;
+
+public class PickOfDividingOresByAFraction extends ItemPickaxe{
+	
+	public PickOfDividingOresByAFraction(ToolMaterial material){
+		super(material);
+        setCreativeTab(CreativeTabs.tabTools);
+        setMaxStackSize(1);
+        setUnlocalizedName("pickOfDividingOresByAFraction");
+        setTextureName("derpmod:oreFracDivPick");
+	}
+
+}
