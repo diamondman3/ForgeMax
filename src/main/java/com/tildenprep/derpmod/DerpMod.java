@@ -55,6 +55,9 @@ public class DerpMod
 	public final static Block rageOre = new RageOre(Material.rock);
 	public final static Block rageBlock= new RageBlock(Material.rock);
 
+    public static Item cheese;
+    public static Item burger;
+
 	public static Item derpIngot;
 	public static Item derpSword;
 	public static Item derpShovel;
@@ -75,6 +78,7 @@ public class DerpMod
 	public static UnfinishedRageIngot unfinishedRageIngot;
 	public static CompleteRageIngot cri;
 	public static Item rickRollDisc;
+    public static Item swordOfGoodbye;
 
 	public static Item mfoc;
 	
@@ -93,7 +97,15 @@ public class DerpMod
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		EntityManager.mainRegistry();
-		
+
+        GameRegistry.registerItem(cheese, "Cheese");
+        ItemStack cheeseStack = new ItemStack(cheese, 1);
+        GameRegistry.addShapelessRecipe(cheeseStack, new ItemStack(Items.milk_bucket, 1), new ItemStack(Items.sugar, 1));
+
+        GameRegistry.registerItem(burger, "Burger");
+        ItemStack burgerStack = new ItemStack(burger, 1);
+        GameRegistry.addShapelessRecipe(burgerStack, new ItemStack(Items.cooked_beef, 1), new ItemStack(Items.bread, 1), new ItemStack(Items.bread, 1));
+
 		GameRegistry.registerBlock(derpOre, "Derp Ore");
 		GameRegistry.registerBlock(trollOre, "Troll Ore");
 		GameRegistry.registerBlock(rageOre, "Rage Ore");
@@ -241,7 +253,14 @@ public class DerpMod
 		GameRegistry.addSmelting(uris4, uris5, 0F);
 		GameRegistry.addSmelting(uris5, uris6, 0F);
 		GameRegistry.addSmelting(uris6, criStack, 100F);
-		
+
+        GameRegistry.registerItem(swordOfGoodbye, "Sword of Goodbye");
+        ItemStack sOGStack = new ItemStack(swordOfGoodbye, 1);
+
+        GameRegistry.addShapedRecipe(sOGStack, "t  ", "r  ", "d  ", 't', trollBlock, 'r', cri, 'd', derpIngot);
+        GameRegistry.addShapedRecipe(sOGStack, " t ", " r ", " d ", 't', trollBlock, 'r', cri, 'd', derpIngot);
+        GameRegistry.addShapedRecipe(sOGStack, "  t", "  r", "  d", 't', trollBlock, 'r', cri, 'd', derpIngot);
+
 		DerpWorld.mainRegistry();
 		proxy.registerRenderers();
 		

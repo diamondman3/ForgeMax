@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/forge-1.7.2-10.12.2.1133-src.iml" filepath="$PROJECT_DIR$/forge-1.7.2-10.12.2.1133-src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForgeMax.iml" filepath="$PROJECT_DIR$/ForgeMax.iml" />
     </modules>
   </component>
 </project>
